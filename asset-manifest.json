@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gosling-react/static/css/main.194f0d5e.chunk.css",
-    "main.js": "/gosling-react/static/js/main.d6904b76.chunk.js",
-    "main.js.map": "/gosling-react/static/js/main.d6904b76.chunk.js.map",
+    "main.js": "/gosling-react/static/js/main.725bc707.chunk.js",
+    "main.js.map": "/gosling-react/static/js/main.725bc707.chunk.js.map",
     "runtime-main.js": "/gosling-react/static/js/runtime-main.bbfda837.js",
     "runtime-main.js.map": "/gosling-react/static/js/runtime-main.bbfda837.js.map",
     "static/js/2.eaf30253.chunk.js": "/gosling-react/static/js/2.eaf30253.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.bbfda837.js",
     "static/js/2.eaf30253.chunk.js",
     "static/css/main.194f0d5e.chunk.css",
-    "static/js/main.d6904b76.chunk.js"
+    "static/js/main.725bc707.chunk.js"
   ]
 }
