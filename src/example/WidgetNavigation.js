@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { GoslingComponent } from 'gosling.js';
+import { GoslingComponent } from '@ericastutz/gosling.js';
 
 const CHRS = [
 	'chr1',

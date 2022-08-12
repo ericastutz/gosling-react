@@ -4,12 +4,14 @@ import SimpleExample from './example/Simple';
 import VegaLiteExample from './example/VegaLite';
 import WidgetEncoding from './example/WidgetEncoding';
 import WidgetNavigation from './example/WidgetNavigation';
+import EdgeBundling from './example/EdgeBundling';
 import MouseEvents from './example/MouseEvents';
 
 // The full list of examples
 const examples = {
 	Simple: <SimpleExample/>,
 	'Widget (Encoding)': <WidgetEncoding/>,
+	'Edge Bundling': <EdgeBundling/>,
 	'Widget (Navigation)': <WidgetNavigation/>,
 	'Mouse Events': <MouseEvents/>,
 	'Vega-Lite': <VegaLiteExample/>,

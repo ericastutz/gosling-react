@@ -4,7 +4,7 @@ import { GoslingComponent } from '@ericastutz/gosling.js';
 const MARK_OPTIONS = ['point', 'bar', 'line', 'area'];
 const LAYOUT_OPTIONS = ['linear', 'circular'];
 
-const goslingSpec = (mark, layout, tension) => {
+const goslingSpec = (mark, layout, binSize) => {
 	return {
 		layout,
 		arrangement: 'vertical',
@@ -25,7 +25,7 @@ const goslingSpec = (mark, layout, tension) => {
 							column: 'position',
 							value: 'peak',
 							categories: Array.from(Array(6)).map((_, i) => `sample ${i}`),
-							tension: tension === 0 ? 1 : tension
+							binSize: binSize === 0 ? 1 : binSize
 						},
 						mark: mark,
 						x: { field: 'start', type: 'genomic' },
@@ -58,7 +58,7 @@ function WidgetEncoding() {
 
 	const [mark, setMark] = useState('point');
 	const [layout, setLayout] = useState('linear');
-	const [tension, setBinSize] = useState(8);
+	const [binSize, setBinSize] = useState(8);
 
 	return (
 		<>
@@ -70,13 +70,13 @@ function WidgetEncoding() {
 						min={0}
 						max={32}
 						step={4}
-						value={tension}
+						value={binSize}
 						className="slider"
 						id="bin-slider"
 						style={{ width: 100, display: 'inline', margin: 10 }}
 						onChange={(e) => setBinSize(+e.currentTarget.value)}
 					/>
-					{tension === 0 ? 1 : tension}
+					{binSize === 0 ? 1 : binSize}
 				</div>
 			</span>
 			<div style={{ marginTop: 30, marginLeft: 80 }}>
@@ -94,7 +94,7 @@ function WidgetEncoding() {
 
 			<GoslingComponent
 				ref={gosRef}
-				spec={goslingSpec(mark, layout, tension)}
+				spec={goslingSpec(mark, layout, binSize)}
 				experimental={{ reactive: true }}
 			/>
 		</>
@@ -102,3 +102,4 @@ function WidgetEncoding() {
 }
 
 export default WidgetEncoding;
+

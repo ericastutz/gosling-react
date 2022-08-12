@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { GoslingComponent } from 'gosling.js';
+import { GoslingComponent } from '@ericastutz/gosling.js';
 import { VegaLite } from 'react-vega'
 
 const goslingSpec = {

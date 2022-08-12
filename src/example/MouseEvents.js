@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { GoslingComponent } from 'gosling.js';
+import { GoslingComponent } from '@ericastutz/gosling.js';
 
 function MouseEvents() {
 

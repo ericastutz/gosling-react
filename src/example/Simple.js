@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoslingComponent } from 'gosling.js';
+import { GoslingComponent } from '@ericastutz/gosling.js';
 
 function SimpleExample() {
 	return (
